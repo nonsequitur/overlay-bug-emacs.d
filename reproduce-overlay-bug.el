@@ -38,6 +38,7 @@
     ;; Setze Leerzeichen vors Semikolon am Dateianfang
     (goto-char (point-min))
     (insert " "))
+  (message "Revert Buffer:")
   (revert-buffer t t) ; noconfirm
   ;; Jetzt *Messages*-Buffer prüfen:
   ;; fringe-helper-modification-func wurde mit einem gelöschten Overlay als Parameter
